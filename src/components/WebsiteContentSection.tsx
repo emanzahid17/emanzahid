@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Globe, ArrowRight, Zap, Target, Award } from 'lucide-react';
+import { Globe, ArrowRight, Zap, Target, Award, TrendingUp } from 'lucide-react';
 
 const WebsiteContentSection = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -9,7 +8,7 @@ const WebsiteContentSection = () => {
     {
       id: 1,
       type: "Landing Page",
-      industry: "SaaS",
+      industry: "SaaS", 
       title: "AI-Powered Analytics Dashboard",
       headline: "Turn Data Into Decisions That Drive Growth",
       description: "Transform complex analytics into actionable insights with our AI-powered dashboard. Get real-time metrics, predictive forecasting, and automated reporting.",
