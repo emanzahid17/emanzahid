@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Globe, ArrowRight, Zap, Target, Award, TrendingUp, Code, Palette, Rocket } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
@@ -11,51 +10,68 @@ const WebsiteContentSection = () => {
   const contentSamples = [
     {
       id: 1,
-      type: "AI Strategy Landing",
-      industry: "Tech & AI", 
-      title: "AI-Powered Content Revolution",
-      headline: "Transform Your Content Strategy with AI That Actually Works",
-      description: "Stop creating content that gets lost in the noise. Our AI-powered approach has helped 200+ businesses increase their content engagement by 340% and generate qualified leads on autopilot.",
-      cta: "Get Your AI Content Audit",
+      type: "Social Media Marketing",
+      industry: "Digital Agency", 
+      title: "Social Media Presence",
+      image: "/lovable-uploads/dfac1766-b49d-4328-91ab-22a0410e72ba.png",
+      headline: "Helping brands own their social media presence",
+      description: "Helping brands own their social media presence by deploying result-driven services around social strategy, content production, community management, paid social advertising, influencer marketing social selling & more.",
+      cta: "Get Social Strategy",
       conversionRate: "47% increase",
       bgColor: "from-purple-600/20 to-blue-600/20",
       icon: <Zap className="w-6 h-6" />
     },
     {
       id: 2,
-      type: "Conversion Landing",
-      industry: "SaaS & Startups",
-      title: "High-Converting Website Copy",
-      headline: "Turn Your Website Visitors Into Paying Customers",
-      description: "Your website gets traffic but no conversions? We've crafted copy for 150+ SaaS companies that consistently converts at 12%+ - while industry average is 2.3%.",
-      cta: "Audit My Website Copy",
+      type: "Digital Marketing",
+      industry: "Marketing Agency",
+      title: "Digital Marketing Services",
+      image: "/lovable-uploads/aab9db5f-4c9f-48d8-aa19-f389e64bbb26.png",
+      headline: "Think big, think different with digital marketing",
+      description: "Comprehensive digital marketing services including SEO, copywriting, content marketing, Facebook ads, lead generation, and email marketing to boost your brand's visibility and engagement.",
+      cta: "Schedule A Call",
       conversionRate: "520% ROI boost",
       bgColor: "from-orange-600/20 to-red-600/20",
       icon: <Target className="w-6 h-6" />
     },
     {
       id: 3,
-      type: "Authority Builder",
-      industry: "Consulting & Coaching",
-      title: "Thought Leadership Content",
-      headline: "Build Authority That Attracts Premium Clients",
-      description: "Position yourself as the go-to expert in your field. Our strategic content approach has helped consultants command 3x higher rates and book months in advance.",
-      cta: "Build My Authority",
+      type: "Startup Growth",
+      industry: "Business Development",
+      title: "Startup Domination",
+      image: "/lovable-uploads/5d779a7d-6c09-4cbd-b3cc-7718880b458e.png",
+      headline: "Helping Startups, Agencies and Creators Dominate the Online Market",
+      description: "We empower businesses with innovative solutions to enhance visibility and engagement. From startups to agencies, we help you outshine the competition with 10k+ worldwide clients.",
+      cta: "Get Started",
       conversionRate: "300% rate increase",
       bgColor: "from-green-600/20 to-emerald-600/20",
       icon: <Award className="w-6 h-6" />
     },
     {
       id: 4,
-      type: "Tech Innovation",
-      industry: "Development & Design",
-      title: "Technical Content That Sells",
-      headline: "Explain Complex Tech in Simple, Compelling Ways",
-      description: "Bridge the gap between technical excellence and business results. We help tech companies communicate their innovation in ways that drive adoption and investment.",
-      cta: "Simplify My Tech Story",
-      conversionRate: "89% clarity boost",
-      bgColor: "from-cyan-600/20 to-blue-600/20",
+      type: "Security Services",
+      industry: "Professional Services",
+      title: "Security Guard Services",
+      image: "/lovable-uploads/3d873f66-1025-4400-ac81-ab116ed640cb.png",
+      headline: "Why Clients Trust Supreme Security Services",
+      description: "With over 15 years of dedicated service, we've protected thousands of homes, businesses, and public spaces with certified experts and industry recognition.",
+      cta: "Learn More",
+      conversionRate: "89% trust boost",
+      bgColor: "from-red-600/20 to-orange-600/20",
       icon: <Code className="w-6 h-6" />
+    },
+    {
+      id: 5,
+      type: "Security Company",
+      industry: "Ontario Services",
+      title: "Top-Rated Security Guard",
+      image: "/lovable-uploads/6990031d-1f2b-4f8b-ab34-e5a83ead89c4.png",
+      headline: "Top-Rated Security Guard Company in Ontario, Canada You Can Trust",
+      description: "At Supreme Security Services, we provide licensed guards, advanced surveillance systems, and 24/7 monitoring customized to homes, businesses, construction sites, and public events.",
+      cta: "Read More",
+      conversionRate: "95% satisfaction",
+      bgColor: "from-cyan-600/20 to-blue-600/20",
+      icon: <Rocket className="w-6 h-6" />
     }
   ];
 
@@ -163,8 +179,18 @@ const WebsiteContentSection = () => {
                     </div>
                   </div>
 
-                  {/* Content */}
+                  {/* Website Content Preview */}
                   <div className="space-y-6">
+                    {/* Website Image */}
+                    <div className="relative rounded-lg overflow-hidden border border-navy-accent/20 group-hover:border-orange-primary/20 transition-all duration-300">
+                      <img 
+                        src={sample.image} 
+                        alt={sample.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
                     <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:text-gradient-primary transition-all duration-500 leading-tight">
                       {sample.headline}
                     </h3>
