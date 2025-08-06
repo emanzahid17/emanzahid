@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { BarChart3, TrendingUp, Eye, Users, MousePointer, Target } from 'lucide-react';
 
@@ -66,47 +65,29 @@ const AnalyticsSection = () => {
           </p>
         </div>
 
-        {/* Main Analytics Dashboard */}
+        {/* Real Analytics Screenshots */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {/* Google Search Console Style Metrics */}
+          {/* Google Search Console Analytics */}
           <div className="card-primary">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-xl font-bold text-white">Search Performance</h3>
+              <h3 className="text-xl font-bold text-white">Google Search Console</h3>
               <div className="text-sm text-muted-foreground">Last 3 months</div>
             </div>
             
-            <div className="grid grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-4 rounded-xl border border-blue-600/20">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-blue-400 text-sm font-medium">Total Clicks</span>
-                  <MousePointer className="w-4 h-4 text-blue-400" />
-                </div>
-                <div className="metric-counter text-blue-400">
-                  {formatNumber(animatedValues.clicks)}
-                </div>
-              </div>
-              
-              <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 p-4 rounded-xl border border-purple-600/20">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-purple-400 text-sm font-medium">Total Impressions</span>
-                  <Eye className="w-4 h-4 text-purple-400" />
-                </div>
-                <div className="metric-counter text-purple-400">
-                  {formatNumber(animatedValues.impressions)}
-                </div>
-              </div>
+            <div className="bg-navy-accent/20 rounded-xl p-4 mb-6 border border-navy-accent/30">
+              <img 
+                src="/lovable-uploads/82d7e657-1956-4731-a7a4-98b8653c419d.png" 
+                alt="Google Search Console Analytics - 3 months data showing 2.58K clicks, 95.6K impressions, 2.7% CTR, 22.2 average position"
+                className="w-full rounded-lg border border-navy-accent/20"
+              />
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="p-4 bg-navy-accent/30 rounded-xl">
-                <div className="text-muted-foreground text-sm mb-1">Average CTR</div>
-                <div className="text-2xl font-bold text-green-400">{animatedValues.ctr}%</div>
-              </div>
-              
-              <div className="p-4 bg-navy-accent/30 rounded-xl">
-                <div className="text-muted-foreground text-sm mb-1">Average Position</div>
-                <div className="text-2xl font-bold text-orange-primary">{animatedValues.position}</div>
-              </div>
+            <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+              <img 
+                src="/lovable-uploads/1b17ec11-80bb-4a36-9824-67a96f206ee2.png" 
+                alt="Google Search Console Analytics - Last 28 days showing 834 clicks, 34.8K impressions, 2.4% CTR, 20.1 average position"
+                className="w-full rounded-lg border border-navy-accent/20"
+              />
             </div>
           </div>
 
@@ -114,107 +95,52 @@ const AnalyticsSection = () => {
           <div className="card-primary">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-xl font-bold text-white">Social Media Growth</h3>
-              <div className="text-sm text-muted-foreground">Last 7 days</div>
+              <div className="text-sm text-muted-foreground">Recent Performance</div>
             </div>
 
             <div className="space-y-6">
-              <div className="p-4 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-xl border border-green-500/20">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-white font-medium">Profile Views</span>
-                  <TrendingUp className="w-5 h-5 text-green-400" />
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="text-3xl font-bold text-green-400">16,872</div>
-                  <div className="text-green-400 text-sm font-medium bg-green-500/10 px-2 py-1 rounded">
-                    +20%
-                  </div>
-                </div>
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/0af3968b-0f37-4dd1-bc88-478c6cc09a9d.png" 
+                  alt="Social Media Insights - 16,872 views (+20%), 439 interactions (-24%), 32 net follows (+52%)"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
-                <div className="text-center p-3 bg-navy-accent/30 rounded-xl">
-                  <div className="text-lg font-bold text-blue-400">439</div>
-                  <div className="text-xs text-muted-foreground">Interactions</div>
-                  <div className="text-xs text-red-400">-24%</div>
-                </div>
-                
-                <div className="text-center p-3 bg-navy-accent/30 rounded-xl">
-                  <div className="text-lg font-bold text-green-400">32</div>
-                  <div className="text-xs text-muted-foreground">New Follows</div>
-                  <div className="text-xs text-green-400">+52%</div>
-                </div>
-                
-                <div className="text-center p-3 bg-navy-accent/30 rounded-xl">
-                  <div className="text-lg font-bold text-orange-primary">1,402</div>
-                  <div className="text-xs text-muted-foreground">Total Followers</div>
-                  <div className="text-xs text-green-400">+2.4%</div>
-                </div>
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/f1c2f414-279f-4e1d-86eb-81345b06a0ce.png" 
+                  alt="Total Followers Growth - 1,402 total followers (+2.4% from previous 7 days)"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Content Performance Breakdown */}
+        {/* Content Performance Analytics */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="card-primary">
-            <h3 className="text-xl font-bold text-white mb-6">Content Performance by Type</h3>
-            <div className="space-y-4">
-              {[
-                { type: 'Photo', percentage: 55.8, color: 'bg-blue-500' },
-                { type: 'Multi Photo', percentage: 17, color: 'bg-purple-500' },
-                { type: 'Text', percentage: 11.1, color: 'bg-orange-500' },
-                { type: 'Video', percentage: 6.2, color: 'bg-green-500' },
-                { type: 'Reel', percentage: 4.4, color: 'bg-pink-500' },
-                { type: 'Multi Media', percentage: 4.1, color: 'bg-cyan-500' }
-              ].map((item) => (
-                <div key={item.type} className="flex items-center space-x-4">
-                  <div className="w-16 text-sm text-muted-foreground">{item.type}</div>
-                  <div className="flex-1 bg-navy-accent/30 rounded-full h-3 overflow-hidden">
-                    <div 
-                      className={`h-full ${item.color} transition-all duration-1000`}
-                      style={{ width: `${item.percentage}%` }}
-                    ></div>
-                  </div>
-                  <div className="w-12 text-sm text-white font-medium text-right">
-                    {item.percentage}%
-                  </div>
-                </div>
-              ))}
+            <h3 className="text-xl font-bold text-white mb-6">Content Performance Analytics</h3>
+            <div className="space-y-6">
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/51ab72cf-e73c-4e78-bf3f-35a1979a2850.png" 
+                  alt="Content Performance by Type - Photo 55.8%, Multi Photo 17%, Text 11.1%, Video 6.2%, Reel 4.4%, Multi Media 4.1%"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
+              </div>
             </div>
           </div>
 
           <div className="card-primary">
-            <h3 className="text-xl font-bold text-white mb-6">Key Insights</h3>
-            <div className="space-y-4">
-              <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-green-400 font-medium">High Performance Alert</span>
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Photo content performing 340% above average. Recommend increasing photo-based content strategy.
-                </p>
-              </div>
-
-              <div className="p-4 bg-orange-primary/10 border border-orange-primary/20 rounded-xl">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-2 h-2 bg-orange-primary rounded-full animate-pulse"></div>
-                  <span className="text-orange-primary font-medium">Growth Opportunity</span>
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Video engagement trending upward. Consider incorporating more video content in upcoming campaigns.
-                </p>
-              </div>
-
-              <div className="p-4 bg-blue-accent/10 border border-blue-accent/20 rounded-xl">
-                <div className="flex items-center space-x-3 mb-2">
-                  <div className="w-2 h-2 bg-blue-accent rounded-full animate-pulse"></div>
-                  <span className="text-blue-accent font-medium">Optimization Note</span>
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  Peak engagement time: 2-4 PM weekdays. Optimize posting schedule for maximum reach.
-                </p>
-              </div>
+            <h3 className="text-xl font-bold text-white mb-6">Publishing Activity & Views</h3>
+            <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+              <img 
+                src="/lovable-uploads/f1db21d0-d733-441d-a194-5c63254a44cd.png" 
+                alt="Publishing Activity - 16,872 views (+19.8% from previous 7 days) with activity tracking"
+                className="w-full rounded-lg border border-navy-accent/20"
+              />
             </div>
           </div>
         </div>

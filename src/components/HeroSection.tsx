@@ -51,10 +51,15 @@ const HeroSection = () => {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
               
-              <button className="btn-secondary group">
+              <a 
+                href="https://substack.com/@ezprompt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary group inline-flex items-center justify-center"
+              >
                 <Play className="w-5 h-5 mr-2" />
-                Watch Case Studies
-              </button>
+                Join my Newsletter
+              </a>
             </div>
 
             {/* Stats */}
@@ -85,7 +90,7 @@ const HeroSection = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-xl overflow-hidden border-2 border-orange-primary/20 hover:border-orange-primary/40 transition-all duration-500 hover:scale-105">
                 <img 
                   src="/lovable-uploads/7290b180-01b2-4ba4-950a-6fb1f673b4ae.png" 
-                  alt="AI Content Strategist Profile" 
+                  alt="Eman Zahid - AI Content Strategist Profile" 
                   className="w-full h-full object-cover"
                 />
                 
@@ -94,7 +99,7 @@ const HeroSection = () => {
                 
                 {/* Floating Badge */}
                 <div className="absolute bottom-4 left-4 bg-orange-primary/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
-                  AI Content Expert
+                  Eman Zahid
                 </div>
               </div>
             </div>
