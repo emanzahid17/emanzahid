@@ -19,9 +19,10 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
-          {/* Main Content - Centered */}
-          <div className={`text-center space-y-8 max-w-4xl ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen pt-20 gap-12">
+          
+          {/* Left Side - Content */}
+          <div className={`lg:w-1/2 space-y-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 bg-orange-primary/10 border border-orange-primary/20 rounded-full text-orange-primary text-sm font-medium">
                 <div className="w-2 h-2 bg-orange-primary rounded-full mr-2 animate-pulse"></div>
@@ -33,32 +34,18 @@ const HeroSection = () => {
                 <br />
                 <span className="hero-text-gradient">Strategist &</span>
                 <br />
-                <div className="flex items-center justify-center gap-4 md:gap-8 flex-wrap">
-                  <span className="text-white">AI Content</span>
-                  {/* Profile Image */}
-                  <div className={`relative ${isVisible ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-                    <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-orange-primary/20 hover:border-orange-primary/40 transition-all duration-500 hover:scale-105">
-                      <img 
-                        src="/lovable-uploads/7290b180-01b2-4ba4-950a-6fb1f673b4ae.png" 
-                        alt="Eman Zahid - AI Content Strategist Profile" 
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent"></div>
-                    </div>
-                    <div className="absolute -inset-1 bg-gradient-primary rounded-full blur-md opacity-20 animate-pulse"></div>
-                  </div>
-                </div>
+                <span className="text-white">AI Content</span>
                 <br />
                 <span className="hero-text-gradient">Marketer</span>
               </h1>
               
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed">
                 Transforming brands through data-driven AI content strategies. I help entrepreneurs, 
                 founders, and creators amplify their message with precision-crafted content that converts.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button className="btn-primary group">
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Strategy Call
@@ -90,6 +77,34 @@ const HeroSection = () => {
                 <div className="metric-counter">2.5M+</div>
                 <div className="text-muted-foreground text-sm">Content Impressions</div>
               </div>
+            </div>
+          </div>
+
+          {/* Right Side - Profile Image */}
+          <div className={`lg:w-1/2 flex justify-center lg:justify-end ${isVisible ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
+            <div className="relative">
+              <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-orange-primary/20 hover:border-orange-primary/40 transition-all duration-500 hover:scale-105">
+                <img 
+                  src="/lovable-uploads/7290b180-01b2-4ba4-950a-6fb1f673b4ae.png" 
+                  alt="Eman Zahid - AI Content Strategist Profile" 
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent"></div>
+                
+                {/* Floating Badge */}
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-orange-primary/90 backdrop-blur-sm text-white px-6 py-3 rounded-full text-lg font-medium">
+                  Eman Zahid
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute -inset-4 bg-gradient-primary rounded-full blur-2xl opacity-20 animate-pulse"></div>
+              
+              {/* Floating Elements */}
+              <div className="absolute -top-8 -right-8 w-16 h-16 bg-orange-primary/20 rounded-full blur-xl animate-float"></div>
+              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-blue-accent/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
         </div>
