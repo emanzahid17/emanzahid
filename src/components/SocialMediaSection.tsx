@@ -7,28 +7,28 @@ const SocialMediaSection = () => {
 
   const socialPosts = [
     {
+      id: 1,
+      platform: 'linkedin',
+      icon: <Linkedin className="w-5 h-5" />,
+      content: "I will help your brand grow through content marketing, storytelling...\n\nYour website is getting traffic but zero conversions. Sounds familiar?\n\nA founder booked a 1:1 with me, frustrated that their content wasn't converting.\n\nI checked their site.\nIt looked solid... until I read the content.\n\nIt was all AI-generated.\nZero value. Zero originality.\nNo storytelling. No authority.\nJust plain copy-paste.\n\nDuring the session, I showed them how to strategically use AI, not rely on it blindly.\n\nWe didn't talk about just what they were saying.\nWe explored how they were saying it.\n\nThe flow. The clarity. The emotions. The story behind the offer.\n\nI showed them\n\n✅ Why high-quality content ranks better.\n✅ Why Google penalizes thin AI copy.\n✅ Why good content drives conversions.\n\nTheir mindset shifted.\nAnd then they said:\n'Rewrite it for us.'\n\nSo I did.\n\nHere's what happened next (within 14 days):",
+      engagement: {
+        likes: 2847,
+        comments: 195,
+        shares: 128
+      },
+      performance: "+89% engagement"
+    },
+    {
       id: 2,
       platform: 'linkedin',
       icon: <Linkedin className="w-5 h-5" />,
-      content: "Most content creators are asking the wrong question.\n\nInstead of \"What should I post?\"\n\nThey should be asking \"What problem am I solving?\"\n\nHere's the mindset shift that changed everything for my clients:\n\n❌ Content for content's sake\n✅ Content with clear intent\n\n❌ Posting daily without strategy\n✅ Posting strategically with purpose\n\n❌ Focusing on vanity metrics\n✅ Tracking business metrics\n\nResult? My clients see an average of 150% increase in qualified leads within 90 days.\n\nWhat's your biggest content challenge right now?",
+      content: "7 Ways Live Video Monitoring Secures Your Future\n\nAt Supreme Security Services, we protect your assets with cutting-edge live video monitoring solutions.\n\nHere are the 7 ways live video monitoring secures your future:\n\n1. Enhanced Security through AI-powered threat detection\n2. Faster Response to security incidents\n3. Cost Savings through reduced false alarms\n4. Real-time Monitoring for immediate action\n5. Deterrent to Crime with visible security presence\n6. Evidence Collection for investigations and prosecutions\n7. 24/7 Surveillance for continuous protection\n\nPartner with us for advanced live video monitoring. Contact Supreme Security Services today!",
       engagement: {
-        likes: 3241,
-        comments: 287,
-        shares: 156
+        likes: 1924,
+        comments: 142,
+        shares: 89
       },
-      performance: "+150% leads"
-    },
-    {
-      id: 3,
-      platform: 'twitter',
-      icon: <Twitter className="w-5 h-5" />,
-      content: "AI won't replace content creators.\n\nContent creators who use AI will replace those who don't.\n\nHere are 5 AI tools I use daily:\n\n1. @OpenAI for ideation\n2. @jasper_ai for long-form content\n3. @copy_ai for social captions\n4. @luma_ai for video content\n5. @midjourney for visuals\n\nThe key? AI amplifies creativity, it doesn't replace it.\n\n#AI #ContentCreation #MarketingTools",
-      engagement: {
-        likes: 2156,
-        comments: 194,
-        shares: 267
-      },
-      performance: "+89% engagement"
+      performance: "+156% security leads"
     }
   ];
 
