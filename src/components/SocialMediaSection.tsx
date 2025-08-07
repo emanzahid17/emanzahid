@@ -7,18 +7,6 @@ const SocialMediaSection = () => {
 
   const socialPosts = [
     {
-      id: 1,
-      platform: 'instagram',
-      icon: <Instagram className="w-5 h-5" />,
-      content: "🚀 Just helped a SaaS startup increase their organic reach by 340% in 60 days using AI-powered content strategy.\n\nThe secret? We didn't just create more content – we created SMARTER content.\n\n✨ Here's what we did:\n• Analyzed competitor gaps using AI tools\n• Optimized posting times with data insights\n• Created content pillars that actually convert\n• Used strategic hashtag research\n\n💡 The result: 15K new followers, 2.3M impressions, and most importantly – 127 new qualified leads.\n\n#AIContent #ContentStrategy #SaaS #Growth",
-      engagement: {
-        likes: 1847,
-        comments: 156,
-        shares: 89
-      },
-      performance: "+340% reach"
-    },
-    {
       id: 2,
       platform: 'linkedin',
       icon: <Linkedin className="w-5 h-5" />,

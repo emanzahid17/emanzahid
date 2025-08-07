@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Calendar, ArrowRight, Facebook, Instagram, Linkedin, Youtube, Users } from 'lucide-react';
+import { Mail, Phone, MapPin, Calendar, ArrowRight, Facebook, Instagram, Linkedin, Youtube, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const [contactForm, setContactForm] = useState({
@@ -25,11 +25,12 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: 'Facebook', icon: <Facebook className="w-5 h-5" />, url: '#' },
-    { name: 'Instagram', icon: <Instagram className="w-5 h-5" />, url: '#' },
-    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, url: '#' },
-    { name: 'YouTube', icon: <Youtube className="w-5 h-5" />, url: '#' },
-    { name: 'Pinterest', icon: <Users className="w-5 h-5" />, url: '#' }
+    { name: 'Facebook', icon: <Facebook className="w-5 h-5" />, url: 'https://www.facebook.com/share/16mN2pXma1/' },
+    { name: 'WhatsApp', icon: <MessageCircle className="w-5 h-5" />, url: 'https://whatsapp.com/channel/0029VaD8E9m1yT27X8u0GK33' },
+    { name: 'Instagram', icon: <Instagram className="w-5 h-5" />, url: 'https://www.instagram.com/emanxzahid17?igsh=Z3FrNmU4a2Q0MXhx' },
+    { name: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, url: 'https://www.linkedin.com/in/eman-zahid-b384a6300' },
+    { name: 'YouTube', icon: <Youtube className="w-5 h-5" />, url: 'https://www.youtube.com/@emanzahid17' },
+    { name: 'Medium', icon: <Mail className="w-5 h-5" />, url: 'https://medium.com/@emaanzahid' }
   ];
 
   return (
