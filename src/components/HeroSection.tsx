@@ -33,29 +33,7 @@ const HeroSection = () => {
                 <br />
                 <span className="hero-text-gradient">Strategist &</span>
                 <br />
-                <div className="flex items-center justify-center gap-8 flex-wrap">
-                  <span className="text-white">AI Content</span>
-                  {/* Profile Image alongside AI CONTENT MARKETER */}
-                  <div className={`relative ${isVisible ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
-                    <div className="relative w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-2 border-orange-primary/20 hover:border-orange-primary/40 transition-all duration-500 hover:scale-105">
-                      <img 
-                        src="/lovable-uploads/7290b180-01b2-4ba4-950a-6fb1f673b4ae.png" 
-                        alt="Eman Zahid - AI Content Strategist Profile" 
-                        className="w-full h-full object-cover"
-                      />
-                      
-                      {/* Overlay Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent"></div>
-                      
-                      {/* Floating Badge */}
-                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-orange-primary/90 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-medium">
-                        Eman Zahid
-                      </div>
-                    </div>
-                    {/* Decorative Elements */}
-                    <div className="absolute -inset-2 bg-gradient-primary rounded-full blur-lg opacity-20 animate-pulse"></div>
-                  </div>
-                </div>
+                <span className="text-white">AI Content</span>
                 <br />
                 <span className="hero-text-gradient">Marketer</span>
               </h1>

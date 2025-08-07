@@ -54,7 +54,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('home')}
               className="text-xl font-bold text-gradient-primary hover:scale-105 transition-transform duration-300"
             >
-              AI Content Pro
+              Eman Zahid
             </button>
           </div>
 
