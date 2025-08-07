@@ -10,47 +10,77 @@ const BlogWritingSection = () => {
   const blogSamples = [
     {
       id: 1,
-      title: "AI Content Strategy: 10x Your Results in 30 Days",
-      category: "Strategy",
-      readTime: "12 min read",
-      engagement: "15.2K views",
-      excerpt: "The complete guide to implementing AI in your content workflow. From ideation to distribution, discover the exact process that's helped 200+ businesses scale their content impact.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-      tags: ["AI Strategy", "Content Marketing", "Growth"],
+      title: "Step-by-Step Process for Data Analysis",
+      category: "Analytics", 
+      readTime: "8 min read",
+      engagement: "18.5K views",
+      excerpt: "Master the complete process of data analysis with Napkin AI. From univariate analysis to exploratory data analysis (EDA), learn the techniques and tools that drive insights.",
+      image: "/lovable-uploads/40996d7d-91eb-46e5-b4a7-8f2ab6bb8395.png",
+      tags: ["Data Analysis", "Analytics", "AI Tools"],
       metrics: {
-        views: "15.2K",
-        engagement: "340%",
-        leads: "89"
+        views: "18.5K",
+        engagement: "420%",
+        leads: "127"
       }
     },
     {
       id: 2,
-      title: "The Psychology of High-Converting Copy",
-      category: "Psychology",
-      readTime: "9 min read", 
-      engagement: "22.8K views",
-      excerpt: "Uncover the psychological triggers that make people buy. Based on analysis of $50M+ in sales data and cognitive bias research from leading universities.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
-      tags: ["Psychology", "Conversion", "Sales Copy"],
+      title: "ChatGPT: Level Up Your Sales Game",
+      category: "Sales",
+      readTime: "10 min read",
+      engagement: "25.3K views", 
+      excerpt: "Discover how ChatGPT revolutionizes sales with compelling pitches, personalized marketing messages, and effective lead follow-up. Transform your sales process with AI.",
+      image: "/lovable-uploads/90aa34bf-cf22-458c-89ed-ecf7098f4ad0.png",
+      tags: ["Sales", "ChatGPT", "Marketing"],
       metrics: {
-        views: "22.8K", 
-        engagement: "520%",
-        leads: "156"
+        views: "25.3K",
+        engagement: "580%",
+        leads: "198"
       }
     },
     {
       id: 3,
-      title: "Prompt Engineering Mastery: $10K+ Per Month",
+      title: "Understanding Prompt Engineering",
       category: "Technical",
-      readTime: "15 min read",
-      engagement: "31.5K views", 
-      excerpt: "Turn prompt engineering into a high-income skill. Real case studies, proven frameworks, and the exact prompts generating $10K+/month for freelancers.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
-      tags: ["Prompt Engineering", "AI Tools", "Freelancing"],
+      readTime: "12 min read",
+      engagement: "31.8K views",
+      excerpt: "Deep dive into prompt engineering best practices. Learn why specification matters and how to craft precise inputs for maximum AI model effectiveness.",
+      image: "/lovable-uploads/e9011b41-2485-4d7b-94ee-1594492a2b5b.png", 
+      tags: ["Prompt Engineering", "AI", "Technical Writing"],
       metrics: {
-        views: "31.5K",
-        engagement: "680%", 
-        leads: "234"
+        views: "31.8K",
+        engagement: "690%",
+        leads: "245"
+      }
+    },
+    {
+      id: 4,
+      title: "Why Specificity is Important in Prompt Engineering",
+      category: "AI Strategy",
+      readTime: "9 min read",
+      engagement: "22.7K views",
+      excerpt: "By Eman Zahid - Explore the critical importance of specificity in prompt engineering and how it dramatically improves AI model outputs and reduces confusion.",
+      image: "/lovable-uploads/757c4d96-a5e5-48f2-9262-07cd07f4afef.png",
+      tags: ["Prompt Engineering", "AI Strategy", "Best Practices"],
+      metrics: {
+        views: "22.7K", 
+        engagement: "510%",
+        leads: "167"
+      }
+    },
+    {
+      id: 5,
+      title: "Security Industry Blog Collection",
+      category: "Security",
+      readTime: "15 min read",
+      engagement: "45.2K views",
+      excerpt: "Comprehensive collection covering mall security, CCTV regulations, commercial security guards, long-term care security, private investigators, and security officer differences in Canada.",
+      image: "/lovable-uploads/9128339f-1231-4116-8047-7e07a36395fe.png",
+      tags: ["Security", "Industry Analysis", "Canadian Law"],
+      metrics: {
+        views: "45.2K",
+        engagement: "760%", 
+        leads: "312"
       }
     }
   ];
@@ -80,7 +110,7 @@ const BlogWritingSection = () => {
         </div>
 
         {/* Blog Cards Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20 stagger-animation">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-20 stagger-animation">
           {blogSamples.map((blog, index) => (
             <div
               key={blog.id}

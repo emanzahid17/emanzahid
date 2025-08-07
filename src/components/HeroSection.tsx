@@ -28,12 +28,26 @@ const HeroSection = () => {
                 Available for Strategic Partnerships
               </div>
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-white">AI Content</span>
                 <br />
                 <span className="hero-text-gradient">Strategist &</span>
                 <br />
-                <span className="text-white">AI Content</span>
+                <div className="flex items-center justify-center gap-4 md:gap-8 flex-wrap">
+                  <span className="text-white">AI Content</span>
+                  {/* Profile Image */}
+                  <div className={`relative ${isVisible ? 'animate-scale-in' : 'opacity-0'}`} style={{ animationDelay: '0.3s' }}>
+                    <div className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-orange-primary/20 hover:border-orange-primary/40 transition-all duration-500 hover:scale-105">
+                      <img 
+                        src="/lovable-uploads/7290b180-01b2-4ba4-950a-6fb1f673b4ae.png" 
+                        alt="Eman Zahid - AI Content Strategist Profile" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent"></div>
+                    </div>
+                    <div className="absolute -inset-1 bg-gradient-primary rounded-full blur-md opacity-20 animate-pulse"></div>
+                  </div>
+                </div>
                 <br />
                 <span className="hero-text-gradient">Marketer</span>
               </h1>
