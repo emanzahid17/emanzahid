@@ -64,42 +64,22 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Contact Information */}
-              <div className="space-y-6">
-                <h4 className="text-xl font-bold text-white">Get in Touch</h4>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-orange-primary/10 rounded-xl flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-orange-primary" />
-                    </div>
-                    <div>
-                      <div className="text-white font-medium">Email</div>
-                      <div className="text-muted-foreground">hello@aicontentpro.com</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-blue-accent/10 rounded-xl flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-blue-accent" />
-                    </div>
-                    <div>
-                      <div className="text-white font-medium">Phone</div>
-                      <div className="text-muted-foreground">+1 (555) 123-4567</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-10 h-10 bg-purple-accent/10 rounded-xl flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-purple-accent" />
-                    </div>
-                    <div>
-                      <div className="text-white font-medium">Location</div>
-                      <div className="text-muted-foreground">Working globally, based in EST</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               {/* Contact Information */}
+               <div className="space-y-6">
+                 <h4 className="text-xl font-bold text-white">Get in Touch</h4>
+                 
+                 <div className="space-y-4">
+                   <div className="flex items-center space-x-4">
+                     <div className="w-10 h-10 bg-orange-primary/10 rounded-xl flex items-center justify-center">
+                       <Mail className="w-5 h-5 text-orange-primary" />
+                     </div>
+                     <div>
+                       <div className="text-white font-medium">Email</div>
+                       <div className="text-muted-foreground">emaanzahid60@gmail.com</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
 
               {/* Social Links */}
               <div>

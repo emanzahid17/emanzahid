@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import { ArrowRight, ExternalLink, BookOpen, Clock, TrendingUp, Eye, Heart, Share2 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import blogDataAnalysis from '../assets/blog-data-analysis.jpg';
+import blogChatGptSales from '../assets/blog-chatgpt-sales.jpg';
+import blogPromptEngineering from '../assets/blog-prompt-engineering.jpg';
 
 const BlogWritingSection = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -15,7 +18,7 @@ const BlogWritingSection = () => {
       readTime: "8 min read",
       engagement: "18.5K views",
       excerpt: "Master the complete process of data analysis with Napkin AI. From univariate analysis to exploratory data analysis (EDA), learn the techniques and tools that drive insights.",
-      image: "/lovable-uploads/40996d7d-91eb-46e5-b4a7-8f2ab6bb8395.png",
+      image: blogDataAnalysis,
       tags: ["Data Analysis", "Analytics", "AI Tools"],
       metrics: {
         views: "18.5K",
@@ -30,7 +33,7 @@ const BlogWritingSection = () => {
       readTime: "10 min read",
       engagement: "25.3K views", 
       excerpt: "Discover how ChatGPT revolutionizes sales with compelling pitches, personalized marketing messages, and effective lead follow-up. Transform your sales process with AI.",
-      image: "/lovable-uploads/90aa34bf-cf22-458c-89ed-ecf7098f4ad0.png",
+      image: blogChatGptSales,
       tags: ["Sales", "ChatGPT", "Marketing"],
       metrics: {
         views: "25.3K",
@@ -45,7 +48,7 @@ const BlogWritingSection = () => {
       readTime: "12 min read",
       engagement: "31.8K views",
       excerpt: "Deep dive into prompt engineering best practices. Learn why specification matters and how to craft precise inputs for maximum AI model effectiveness.",
-      image: "/lovable-uploads/e9011b41-2485-4d7b-94ee-1594492a2b5b.png", 
+      image: blogPromptEngineering, 
       tags: ["Prompt Engineering", "AI", "Technical Writing"],
       metrics: {
         views: "31.8K",

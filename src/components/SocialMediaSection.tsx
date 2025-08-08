@@ -29,6 +29,18 @@ const SocialMediaSection = () => {
         shares: 89
       },
       performance: "+156% security leads"
+    },
+    {
+      id: 3,
+      platform: 'linkedin',
+      icon: <Linkedin className="w-5 h-5" />,
+      content: "🔥 Why Content Marketing Beats Paid Ads Every Time\n\nSpent $50K on ads last year?\nHere's what $5K in content marketing can do instead:\n\n❌ Paid Ads: Temporary visibility, expensive clicks, zero brand authority\n✅ Content Marketing: Permanent visibility, organic traffic, thought leadership\n\nReal example from a client:\n• Month 1-3: Built content strategy\n• Month 4-6: Published 24 strategic pieces\n• Month 7-12: Organic traffic increased 340%\n\nThe difference?\n→ Ads stop working when you stop paying\n→ Content keeps working 24/7 for years\n\nContent is not an expense.\nIt's an investment that compounds.\n\nWhat's your content strategy for 2024?",
+      engagement: {
+        likes: 3567,
+        comments: 234,
+        shares: 189
+      },
+      performance: "+340% organic traffic"
     }
   ];
 
