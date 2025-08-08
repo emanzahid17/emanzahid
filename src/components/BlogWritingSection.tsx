@@ -112,6 +112,59 @@ const BlogWritingSection = () => {
           </p>
         </div>
 
+        {/* Blog Sample Images */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="card-primary">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-bold text-white">Blog Writing Samples</h3>
+              <div className="text-sm text-muted-foreground">Live Content</div>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/16962a5b-98f9-43c9-87ab-80f80d0d6ff1.png" 
+                  alt="Step-by-Step Process for Data Analysis - Complete guide with techniques, tools, and purpose including univariate analysis, bivariate analysis, exploratory data analysis"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
+              </div>
+
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/df9f13e4-87e2-4386-86c5-ace52910e2c9.png" 
+                  alt="ChatGPT Sales Guide - How AI revolutionizes sales with compelling pitches, personalized marketing, and effective lead follow-up"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="card-primary">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-bold text-white">Technical Writing Portfolio</h3>
+              <div className="text-sm text-muted-foreground">Expert Content</div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/95c8bbb4-a629-44f8-80fc-5944639068b0.png" 
+                  alt="Understanding Prompt Engineering - Why specification matters in AI prompts and how to craft effective instructions"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
+              </div>
+
+              <div className="bg-navy-accent/20 rounded-xl p-4 border border-navy-accent/30">
+                <img 
+                  src="/lovable-uploads/57b68c35-c963-44bb-b59b-8baa01250f73.png" 
+                  alt="Prompt Engineering Article by Eman Zahid - In-depth analysis of why specificity is crucial in prompt engineering"
+                  className="w-full rounded-lg border border-navy-accent/20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Blog Cards Grid */}
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-20 stagger-animation">
           {blogSamples.map((blog, index) => (

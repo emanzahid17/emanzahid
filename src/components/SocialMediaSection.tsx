@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Heart, MessageCircle, Share2, Bookmark, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Heart, MessageCircle, Share2, Bookmark, Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 const SocialMediaSection = () => {
   const [activePost, setActivePost] = useState<number | null>(null);
@@ -10,7 +10,7 @@ const SocialMediaSection = () => {
       id: 1,
       platform: 'linkedin',
       icon: <Linkedin className="w-5 h-5" />,
-      content: "I will help your brand grow through content marketing, storytelling...\n\nYour website is getting traffic but zero conversions. Sounds familiar?\n\nA founder booked a 1:1 with me, frustrated that their content wasn't converting.\n\nI checked their site.\nIt looked solid... until I read the content.\n\nIt was all AI-generated.\nZero value. Zero originality.\nNo storytelling. No authority.\nJust plain copy-paste.\n\nDuring the session, I showed them how to strategically use AI, not rely on it blindly.\n\nWe didn't talk about just what they were saying.\nWe explored how they were saying it.\n\nThe flow. The clarity. The emotions. The story behind the offer.\n\nI showed them\n\n✅ Why high-quality content ranks better.\n✅ Why Google penalizes thin AI copy.\n✅ Why good content drives conversions.\n\nTheir mindset shifted.\nAnd then they said:\n'Rewrite it for us.'\n\nSo I did.\n\nHere's what happened next (within 14 days):",
+      content: "Your website is getting traffic but zero conversions. Sounds familiar?\n\nA founder booked a 1:1 with me, frustrated that their content wasn't converting.\n\nI checked their site.\nIt looked solid... until I read the content.\n\nIt was all AI-generated.\nZero value. Zero originality.\nNo storytelling. No authority.\nJust plain copy-paste.\n\nDuring the session, I showed them how to strategically use AI, not rely on it blindly.\n\nWe didn't talk about just what they were saying.\nWe explored how they were saying it.\n\nThe flow. The clarity. The emotions. The story behind the offer.\n\nI showed them\n\n✅ Why high-quality content ranks better.\n✅ Why Google penalizes thin AI copy.\n✅ Why good content drives conversions.\n\nTheir mindset shifted.\nAnd then they said:\n'Rewrite it for us.'\n\nSo I did.\n\nHere's what happened next (within 14 days):",
       engagement: {
         likes: 2847,
         comments: 195,
@@ -41,6 +41,18 @@ const SocialMediaSection = () => {
         shares: 189
       },
       performance: "+340% organic traffic"
+    },
+    {
+      id: 4,
+      platform: 'facebook',
+      icon: <Facebook className="w-5 h-5" />,
+      content: "🎯 Understanding Prompt Engineering\n\nPrompt engineering is the practice of designing precise inputs to guide AI models toward producing useful and meaningful responses.\n\nKey Benefits:\n✅ Clearer AI outputs\n✅ Better task completion\n✅ Reduced ambiguity\n✅ More accurate results\n\nWhy Specification Matters:\n→ Helps AI understand context\n→ Reduces confusion\n→ Increases accuracy\n→ Saves time and effort\n\nSpecifying prompts helps in clarity and gives the context to AI, hence making it easier for the machine to provide the right solution.\n\n#PromptEngineering #AI #ContentStrategy #DigitalMarketing",
+      engagement: {
+        likes: 1892,
+        comments: 167,
+        shares: 95
+      },
+      performance: "+245% AI engagement"
     }
   ];
 
@@ -49,6 +61,7 @@ const SocialMediaSection = () => {
       case 'instagram': return 'from-pink-500 to-orange-500';
       case 'linkedin': return 'from-blue-600 to-blue-700';
       case 'twitter': return 'from-blue-400 to-blue-500';
+      case 'facebook': return 'from-blue-600 to-blue-800';
       default: return 'from-gray-500 to-gray-600';
     }
   };
@@ -78,7 +91,7 @@ const SocialMediaSection = () => {
         </div>
 
         {/* Social Posts Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
           {socialPosts.map((post, index) => (
             <div
               key={post.id}
