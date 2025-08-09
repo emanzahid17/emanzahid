@@ -89,7 +89,7 @@ const BlogWritingSection = () => {
   ];
 
   return (
-    <section id="blog-writing" className="py-24 bg-gradient-to-br from-navy-secondary/50 via-navy-primary to-navy-secondary/30 relative overflow-hidden">
+    <section id="blog-writing" className="pb-24 bg-gradient-to-br from-navy-secondary/50 via-navy-primary to-navy-secondary/30 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-32 right-20 w-64 h-64 bg-blue-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '0.5s' }}></div>

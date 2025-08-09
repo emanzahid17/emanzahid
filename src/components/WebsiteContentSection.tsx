@@ -179,14 +179,15 @@ const WebsiteContentSection = () => {
                     </div>
                   </div>
 
-                  {/* Website Content Preview */}
+        {/* Website Content Preview */}
                   <div className="space-y-6">
                     {/* Website Image */}
                     <div className="relative rounded-lg overflow-hidden border border-navy-accent/20 group-hover:border-orange-primary/20 transition-all duration-300">
                       <img 
                         src={sample.image} 
                         alt={sample.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
