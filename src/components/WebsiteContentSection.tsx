@@ -13,7 +13,7 @@ const WebsiteContentSection = () => {
       type: "Social Media Marketing",
       industry: "Digital Agency", 
       title: "Social Media Presence",
-      image: "/lovable-uploads/cbf405ee-1567-4e8f-be0f-4d2250425625.png",
+      image: "/lovable-uploads/0af3968b-0f37-4dd1-bc88-478c6cc09a9d.png",
       headline: "Helping brands own their social media presence",
       description: "Helping brands own their social media presence by deploying result-driven services around social strategy, content production, community management, paid social advertising, influencer marketing social selling & more.",
       cta: "Get Social Strategy",
@@ -26,7 +26,7 @@ const WebsiteContentSection = () => {
       type: "Digital Marketing",
       industry: "Marketing Agency",
       title: "Digital Marketing Services",
-      image: "/lovable-uploads/3a1ecf77-fa1a-44cf-8ce2-0b40a37a79f7.png",
+      image: "/lovable-uploads/82d7e657-1956-4731-a7a4-98b8653c419d.png",
       headline: "Think big, think different with digital marketing",
       description: "Comprehensive digital marketing services including SEO, copywriting, content marketing, Facebook ads, lead generation, and email marketing to boost your brand's visibility and engagement.",
       cta: "Schedule A Call",
@@ -39,7 +39,7 @@ const WebsiteContentSection = () => {
       type: "Startup Growth",
       industry: "Business Development",
       title: "Startup Domination",
-      image: "/lovable-uploads/99c7a88e-2d2a-4312-b59d-18373d4ce61d.png",
+      image: "/lovable-uploads/1b17ec11-80bb-4a36-9824-67a96f206ee2.png",
       headline: "Helping Startups, Agencies and Creators Dominate the Online Market",
       description: "We empower businesses with innovative solutions to enhance visibility and engagement. From startups to agencies, we help you outshine the competition with 10k+ worldwide clients.",
       cta: "Get Started",
@@ -52,26 +52,13 @@ const WebsiteContentSection = () => {
       type: "Security Services",
       industry: "Professional Services",
       title: "Security Guard Services",
-      image: "/lovable-uploads/eb114900-aada-4be9-9a44-85ba16b2d80f.png",
+      image: "/lovable-uploads/f1c2f414-279f-4e1d-86eb-81345b06a0ce.png",
       headline: "Why Clients Trust Supreme Security Services",
       description: "With over 15 years of dedicated service across Ontario, we've protected thousands of homes, businesses, and public spaces with 300+ happy clients, 35 branches, 1,000+ total guards, and 5+ years in business.",
       cta: "Learn More",
       conversionRate: "89% trust boost",
       bgColor: "from-red-600/20 to-orange-600/20",
       icon: <Code className="w-6 h-6" />
-    },
-    {
-      id: 5,
-      type: "Security Company",
-      industry: "Ontario Services",
-      title: "Top-Rated Security Guard",
-      image: "/lovable-uploads/02f64474-971e-4264-9e3d-3b40ba72f49d.png",
-      headline: "Top-Rated Security Guard Company in Ontario, Canada You Can Trust",
-      description: "At Supreme Security Services, we provide licensed guards, advanced surveillance systems, and 24/7 monitoring customized to homes, businesses, construction sites, and public events with unmatched hospitality.",
-      cta: "Read More",
-      conversionRate: "95% satisfaction",
-      bgColor: "from-cyan-600/20 to-blue-600/20",
-      icon: <Rocket className="w-6 h-6" />
     }
   ];
 
@@ -188,6 +175,11 @@ const WebsiteContentSection = () => {
                         alt={sample.title}
                         className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
+                        onError={(e) => {
+                          console.error('Image failed to load:', sample.image);
+                          e.currentTarget.style.display = 'none';
+                        }}
+                        onLoad={() => console.log('Image loaded successfully:', sample.image)}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
