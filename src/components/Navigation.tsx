@@ -9,7 +9,6 @@ const Navigation = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'blog-writing', label: 'Blog Writing' },
-    { id: 'portfolio', label: 'Portfolio' },
     { id: 'social-media', label: 'Social Media Captions' },
     { id: 'analytics', label: 'Analytics' },
     { id: 'prompt-engineering', label: 'Prompt Engineering' },

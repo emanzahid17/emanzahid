@@ -85,6 +85,21 @@ const BlogWritingSection = () => {
         engagement: "760%", 
         leads: "312"
       }
+    },
+    {
+      id: 6,
+      title: "Mobile Patrolling Security Guard Services",
+      category: "Security Services",
+      readTime: "7 min read",
+      engagement: "19.4K views",
+      excerpt: "Comprehensive guide on mobile patrolling security services for commercial property protection, including risk evaluation and essential safeguards for businesses.",
+      image: "/lovable-uploads/faa3813e-a46d-4944-92a4-0997abe22c47.png",
+      tags: ["Security", "Mobile Patrol", "Commercial Protection"],
+      metrics: {
+        views: "19.4K",
+        engagement: "440%",
+        leads: "156"
+      }
     }
   ];
 
