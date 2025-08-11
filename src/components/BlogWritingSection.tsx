@@ -5,6 +5,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import blogDataAnalysis from '../assets/blog-data-analysis.jpg';
 import blogChatGptSales from '../assets/blog-chatgpt-sales.jpg';
 import blogPromptEngineering from '../assets/blog-prompt-engineering.jpg';
+import promptSpecificity from '/public/lovable-uploads/757c4d96-a5e5-48f2-9262-07cd07f4afef.png';
+import securityCollection from '/public/lovable-uploads/9128339f-1231-4116-8047-7e07a36395fe.png';
+import mobilePatrolling from '/public/lovable-uploads/faa3813e-a46d-4944-92a4-0997abe22c47.png';
 
 const BlogWritingSection = () => {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -63,7 +66,7 @@ const BlogWritingSection = () => {
       readTime: "9 min read",
       engagement: "22.7K views",
       excerpt: "By Eman Zahid - Explore the critical importance of specificity in prompt engineering and how it dramatically improves AI model outputs and reduces confusion.",
-      image: "/lovable-uploads/757c4d96-a5e5-48f2-9262-07cd07f4afef.png",
+      image: promptSpecificity,
       tags: ["Prompt Engineering", "AI Strategy", "Best Practices"],
       metrics: {
         views: "22.7K", 
@@ -78,7 +81,7 @@ const BlogWritingSection = () => {
       readTime: "15 min read",
       engagement: "45.2K views",
       excerpt: "Comprehensive collection covering mall security, CCTV regulations, commercial security guards, long-term care security, private investigators, and security officer differences in Canada.",
-      image: "/lovable-uploads/9128339f-1231-4116-8047-7e07a36395fe.png",
+      image: securityCollection,
       tags: ["Security", "Industry Analysis", "Canadian Law"],
       metrics: {
         views: "45.2K",
@@ -93,7 +96,7 @@ const BlogWritingSection = () => {
       readTime: "7 min read",
       engagement: "19.4K views",
       excerpt: "Comprehensive guide on mobile patrolling security services for commercial property protection, including risk evaluation and essential safeguards for businesses.",
-      image: "/lovable-uploads/faa3813e-a46d-4944-92a4-0997abe22c47.png",
+      image: mobilePatrolling,
       tags: ["Security", "Mobile Patrol", "Commercial Protection"],
       metrics: {
         views: "19.4K",
