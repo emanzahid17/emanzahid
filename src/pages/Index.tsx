@@ -3,7 +3,6 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import BlogWritingSection from '../components/BlogWritingSection';
-import PortfolioSection from '../components/PortfolioSection';
 import SocialMediaSection from '../components/SocialMediaSection';
 import AnalyticsSection from '../components/AnalyticsSection';
 import PromptEngineeringSection from '../components/PromptEngineeringSection';
@@ -16,7 +15,6 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <BlogWritingSection />
-      <PortfolioSection />
       <SocialMediaSection />
       <AnalyticsSection />
       <PromptEngineeringSection />
