@@ -72,6 +72,8 @@ const PortfolioSection = () => {
     }
   ];
 
+  console.log('PortfolioSection rendering with websites:', portfolioWebsites);
+  
   return (
     <section id="portfolio" className="py-24 bg-gradient-to-br from-navy-primary via-navy-secondary to-navy-primary relative overflow-hidden">
       {/* Background Animation Elements */}
