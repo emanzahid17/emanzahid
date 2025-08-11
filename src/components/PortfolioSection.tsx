@@ -131,11 +131,21 @@ const PortfolioSection = () => {
                     </h3>
                   </div>
 
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-muted-foreground leading-relaxed text-sm mb-3">
                     {site.description}
                   </p>
 
-                  <div className="pt-4">
+                  {/* URL Display */}
+                  <div className="bg-navy-secondary/50 border border-navy-accent/30 rounded-lg p-3 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <Globe className="w-4 h-4 text-orange-primary" />
+                      <span className="text-xs text-muted-foreground font-mono">
+                        {site.url}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="pt-2">
                     {site.clickable ? (
                       <a
                         href={site.url}
@@ -149,7 +159,7 @@ const PortfolioSection = () => {
                     ) : (
                       <div className="inline-flex items-center px-4 py-2 bg-navy-accent/30 border border-navy-accent/50 rounded-lg text-muted-foreground text-sm cursor-not-allowed">
                         <Globe className="w-4 h-4 mr-2" />
-                        {site.url.replace('https://', '').replace('/', '')}
+                        Not Available
                       </div>
                     )}
                   </div>
